@@ -1,5 +1,4 @@
 // 추상클래스의 작성 
-
 public class Ex7_10 {
     public static void main(String[] args) {
         Unit[] group = {
@@ -11,13 +10,11 @@ public class Ex7_10 {
         }
     }
 }
-
 abstract class Unit {
     int x, y;
     abstract void move(int x, int y);
     void stop(){}
 }
-
 class Marine extends Unit { // 보병
     void move(int x , int y){
         System.out.println("Marine [x= "+ x + ", y=" + y + "]");
